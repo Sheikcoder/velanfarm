@@ -2,6 +2,8 @@ import product200g from "@/assets/product-200g.jpg";
 import product1kg from "@/assets/product-1kg.jpg";
 
 export const WHATSAPP_NUMBER = "9342078848";
+/** Served from /public so Vercel does not depend on Lovable /__l5e/ asset URLs. */
+export const LOGO_SRC = "/velan-logo.png";
 
 export type Product = {
   id: string;

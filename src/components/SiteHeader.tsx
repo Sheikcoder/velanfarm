@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { ShoppingBasket, Menu } from "lucide-react";
-import logo from "@/assets/velan-logo.png";
 import { Button } from "@/components/ui/button";
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { useCart } from "@/hooks/use-cart";
 import { useLanguage } from "@/hooks/use-language";
 import type { TranslationKey } from "@/lib/i18n";
+import { LOGO_SRC } from "@/lib/shop";
 
 const links: { href: string; key: TranslationKey }[] = [
   { href: "#products", key: "navProducts" },
@@ -37,7 +37,7 @@ export function SiteHeader() {
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-3 lg:px-8">
         <a href="#top" className="flex min-w-0 items-center gap-3">
           <img
-            src={logo}
+            src={LOGO_SRC}
             alt="Velan Oyster Mushroom Farm logo"
             width={56}
             height={56}
