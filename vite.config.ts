@@ -12,4 +12,7 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Vercel sets VERCEL=1 during build. Pin Nitro so the site is emitted as
+  // Vercel Output API instead of the Cloudflare default (blank Vercel page).
+  nitro: process.env.VERCEL ? { preset: "vercel" } : undefined,
 });

@@ -1,5 +1,5 @@
 import { Phone, MessageCircle, MapPin } from "lucide-react";
-import logo from "@/assets/velan-logo.png.asset.json";
+import logo from "@/assets/velan-logo.png";
 import { useLanguage } from "@/hooks/use-language";
 import { WHATSAPP_NUMBER, enquiryUrl } from "@/lib/shop";
 
@@ -51,7 +51,7 @@ export function SiteFooter() {
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
           <div className="flex items-start gap-4">
             <img
-              src={logo.url}
+              src={logo}
               alt="Velan Oyster Mushroom Farm logo"
               loading="lazy"
               width={80}
