@@ -59,8 +59,10 @@ export function ProductDialog({
                   <li className="flex items-start gap-2">
                     <Clock className="mt-0.5 size-4 shrink-0 text-gold" />
                     <span>
-                      <strong className="text-forest">{t("freshness")}:</strong>{" "}
-                      {t("freshnessBody")}
+                      <strong className="text-forest">
+                        {t(product.isDry ? "shelfLife" : "freshness")}:
+                      </strong>{" "}
+                      {t(product.isDry ? "shelfLifeBody" : "freshnessBody")}
                     </span>
                   </li>
                   <li className="flex items-start gap-2">

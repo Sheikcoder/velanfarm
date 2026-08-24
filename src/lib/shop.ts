@@ -1,5 +1,6 @@
 import product200g from "@/assets/product-200g.jpg";
 import product1kg from "@/assets/product-1kg.jpg";
+import productDry1kg from "@/assets/product-dry-1kg.jpg";
 
 export const WHATSAPP_NUMBER = "9342078848";
 /** Served from /public so Vercel does not depend on Lovable /__l5e/ asset URLs. */
@@ -15,6 +16,7 @@ export type Product = {
   blurbTa: string;
   blurbEn: string;
   nutrition: string[];
+  isDry?: boolean;
 };
 
 export const products: Product[] = [
@@ -48,6 +50,25 @@ export const products: Product[] = [
       "Antioxidants & natural ergothioneine",
       "Low in calories, zero cholesterol",
       "Naturally high in dietary fibre",
+    ],
+  },
+  {
+    id: "oyster-dry-1kg",
+    nameTa: "உலர்ந்த சிப்பி காளான் (1kg)",
+    nameEn: "Dry Oyster Mushroom (1kg)",
+    weight: "1kg",
+    price: 1200,
+    image: productDry1kg,
+    isDry: true,
+    blurbTa:
+      "நீண்ட நாள் வைக்கக்கூடிய உலர்ந்த சிப்பி காளான் — சூப், குழம்பு மற்றும் தினசரி சமையலுக்கு அடர்த்தியான சுவை.",
+    blurbEn:
+      "Sun-dried oyster mushrooms with a long shelf life — rich flavour for soups, gravies and everyday cooking.",
+    nutrition: [
+      "Concentrated plant protein after drying",
+      "Long shelf life, no added preservatives",
+      "Naturally dried on our farm",
+      "Rehydrates well for gravies, soups and stir-fries",
     ],
   },
 ];

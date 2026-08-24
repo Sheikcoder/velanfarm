@@ -16,7 +16,7 @@ import { products, formatINR, enquiryUrl, WHATSAPP_NUMBER, type Product } from "
 
 const title = "வேலன் சிப்பி காளான் பண்ணை | Velan Oyster Mushroom Farm";
 const description =
-  "Farm-fresh oyster mushrooms from Velan Oyster Mushroom Farm. 200g ₹70, 1kg ₹350. Naturally grown, hygienically packed, order on WhatsApp 9342078848.";
+  "Farm-fresh oyster mushrooms from Velan Oyster Mushroom Farm. Fresh 200g ₹70, 1kg ₹350. Dry 1kg ₹1200. Naturally grown, hygienically packed, order on WhatsApp 9342078848.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -147,7 +147,7 @@ function HomePage() {
         {/* Products */}
         <section id="products" className="mx-auto max-w-7xl px-4 py-16 lg:px-8 lg:py-24">
           <SectionHeading eyebrow="eyebrowProducts" title="productsTitle" sub="productsSub" />
-          <div className="mt-12 grid gap-8 md:grid-cols-2">
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {products.map((p) => (
               <ProductCard key={p.id} product={p} onOpenDetails={setSelected} />
             ))}

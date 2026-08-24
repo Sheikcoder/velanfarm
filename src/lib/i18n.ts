@@ -57,6 +57,11 @@ export const dictionary = {
     en: "harvested the same day and delivered within hours — no cold storage.",
     ta: "அதே நாளில் அறுவடை செய்யப்பட்டு சில மணி நேரத்தில் டெலிவரி — குளிர் சேமிப்பு இல்லை.",
   },
+  shelfLife: { en: "Shelf life", ta: "வைத்திருக்கும் காலம்" },
+  shelfLifeBody: {
+    en: "naturally dried and packed for a long shelf life — store in a cool, dry place.",
+    ta: "இயற்கையாக உலர்த்தி பேக் செய்யப்பட்டது — குளிர்ந்த, உலர்ந்த இடத்தில் வைத்துக்கொள்ளவும்.",
+  },
   naturallyGrown: { en: "Naturally grown", ta: "இயற்கையாக வளர்க்கப்பட்டது" },
   naturallyGrownBody: {
     en: "pesticide-free, on pasteurised paddy straw in our own farm shed.",
@@ -126,7 +131,10 @@ export const dictionary = {
   // How to order
   eyebrowHow: { en: "How to Order", ta: "ஆர்டர் செய்வது எப்படி" },
   howTitle: { en: "How to Order", ta: "ஆர்டர் செய்வது எப்படி" },
-  step1: { en: "Pick your pack (200g or 1kg)", ta: "பொருளை தேர்வு செய்யுங்கள் (200g அல்லது 1kg)" },
+  step1: {
+    en: "Pick your pack (fresh 200g / 1kg, or dry 1kg)",
+    ta: "பொருளை தேர்வு செய்யுங்கள் (புதிய 200g / 1kg, அல்லது உலர் 1kg)",
+  },
   step2: { en: "Set the quantity — total updates live", ta: "அளவை தேர்ந்தெடுங்கள் — மொத்தம் உடனே மாறும்" },
   step3: { en: "Send the order on WhatsApp", ta: "WhatsApp மூலம் ஆர்டர் அனுப்புங்கள்" },
   step4: { en: "We confirm & deliver farm-fresh", ta: "உறுதி செய்து புதிய காளான் வழங்குகிறோம்" },
